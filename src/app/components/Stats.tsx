@@ -2,7 +2,7 @@ export default function Stats() {
   return (
     <section className="py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex justify-center sm-grid-cols-4 gap-20 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {/* ITEM 1 */}
           <div>
             <h3 className="text-3xl font-bold text-gray-900">20</h3>
