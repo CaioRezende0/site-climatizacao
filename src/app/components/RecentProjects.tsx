@@ -18,19 +18,19 @@ export default function RecentProjects() {
   ];
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto">
+    <section className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
       {/* TÍTULO */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-14">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12">
         <span className="text-orange-500">Projetos</span> Recentes
       </h2>
 
       {/* CARDS */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`relative bg-gradient-to-b from-neutral-600 to-black text-white p-6 rounded-xl shadow-md w-72 h-80 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ${
-              index === 1 ? "-translate-y-8" : ""
+            className={`relative bg-gradient-to-b from-neutral-600 to-black text-white p-6 rounded-xl shadow-md w-[90%] sm:w-72 h-80 flex flex-col justify-between hover:scale-105 transition-transform duration-300 ${
+              index === 1 ? "md:-translate-y-8" : ""
             }`}
           >
             <div>
@@ -43,7 +43,7 @@ export default function RecentProjects() {
                 aria-label="Ver detalhes do projeto"
                 className="p-2 rounded-full hover:bg-white/10 transition"
               >
-                <ArrowRight className="w-5 h-5 text-white group-hover:text-orange-400 transition" />
+                <ArrowRight className="w-5 h-5 text-white transition group-hover:text-orange-400" />
               </button>
             </div>
           </div>

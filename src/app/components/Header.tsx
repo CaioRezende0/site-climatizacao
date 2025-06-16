@@ -11,7 +11,7 @@ export default function Header() {
     <header className="relative bg-gray-100 rounded-full shadow-md px-6 py-3 mt-6 max-w-7xl mx-auto flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
-        <Image src="/logo.svg" alt="Logo" width={40} height={40} />
+        <Image src="/logo.png" alt="Logo" width={60} height={60} />
       </div>
 
       {/* Navegação desktop */}
@@ -71,32 +71,56 @@ export default function Header() {
         <div className="absolute left-0 right-0 top-full bg-gray-100 rounded-b-xl shadow-md md:hidden">
           <ul className="flex flex-col items-center gap-4 py-4 text-sm font-medium">
             <li>
-              <a href="#home" onClick={() => setMenuOpen(false)} className="text-black font-semibold">
+              <a
+                href="#home"
+                onClick={() => setMenuOpen(false)}
+                className="text-black font-semibold"
+              >
                 Início
               </a>
             </li>
             <li>
-              <a href="#servicos" onClick={() => setMenuOpen(false)} className="text-gray-600 hover:text-black transition">
+              <a
+                href="#servicos"
+                onClick={() => setMenuOpen(false)}
+                className="text-gray-600 hover:text-black transition"
+              >
                 Serviços
               </a>
             </li>
             <li>
-              <a href="#sobre" onClick={() => setMenuOpen(false)} className="text-gray-600 hover:text-black transition">
+              <a
+                href="#sobre"
+                onClick={() => setMenuOpen(false)}
+                className="text-gray-600 hover:text-black transition"
+              >
                 Sobre
               </a>
             </li>
             <li>
-              <a href="#portfolio" onClick={() => setMenuOpen(false)} className="text-gray-600 hover:text-black transition">
+              <a
+                href="#portfolio"
+                onClick={() => setMenuOpen(false)}
+                className="text-gray-600 hover:text-black transition"
+              >
                 Portfólio
               </a>
             </li>
             <li>
-              <a href="#depoimentos" onClick={() => setMenuOpen(false)} className="text-gray-600 hover:text-black transition">
+              <a
+                href="#depoimentos"
+                onClick={() => setMenuOpen(false)}
+                className="text-gray-600 hover:text-black transition"
+              >
                 Depoimentos
               </a>
             </li>
             <li>
-              <a href="#contato" onClick={() => setMenuOpen(false)} className="text-orange-500 font-semibold">
+              <a
+                href="#contato"
+                onClick={() => setMenuOpen(false)}
+                className="text-orange-500 font-semibold"
+              >
                 Contato
               </a>
             </li>
