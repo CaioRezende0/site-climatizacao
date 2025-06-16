@@ -1,4 +1,5 @@
 import { Wrench, RefreshCcw, Wind, Ruler } from "lucide-react";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -70,7 +71,13 @@ export default function Services() {
 
         {/* BLOCO DE VÍDEO */}
         <div className="col-span-full lg:col-span-2">
-          <div className="relative w-full h-52 sm:h-64 bg-gray-300 rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div className="relative w-full h-52 sm:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+            <Image
+              src="/images/image-7.jpg"
+              alt="Demonstração de serviço"
+              fill
+              className="object-cover"
+            />
             <div className="absolute inset-0 flex items-center justify-center">
               <button className="w-12 h-12 bg-white text-orange-500 rounded-full shadow-md flex items-center justify-center hover:ring-2 hover:ring-orange-400 transition">
                 ▶

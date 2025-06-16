@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ContactCta() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
@@ -45,8 +47,14 @@ export default function ContactCta() {
         </div>
 
         {/* BLOCO ILUSTRATIVO */}
-        <div className="w-full sm:w-64 h-48 bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 text-sm">
-          Imagem de climatização aqui
+        <div className="w-full sm:w-64 h-48 rounded-xl overflow-hidden">
+          <Image
+            src="/images/image-1.png"
+            alt="Entre em contato"
+            width={256}
+            height={192}
+            className="w-full h-48 object-cover"
+          />
         </div>
       </div>
     </section>

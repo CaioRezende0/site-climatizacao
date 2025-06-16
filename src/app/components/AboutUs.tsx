@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutUs() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
@@ -13,7 +15,13 @@ export default function AboutUs() {
       <div className="mt-10 flex flex-col lg:flex-row gap-10 items-start">
         {/* IMAGEM */}
         <div className="flex-1 w-full">
-          <div className="w-full h-60 sm:h-80 md:h-96 bg-gray-300 rounded-2xl transition-transform duration-300 hover:scale-105" />
+          <Image
+            src="/images/image-5.jpg"
+            alt="Equipe trabalhando"
+            width={800}
+            height={400}
+            className="w-full h-60 sm:h-80 md:h-96 rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
+          />
         </div>
 
         {/* TEXTO LATERAL */}

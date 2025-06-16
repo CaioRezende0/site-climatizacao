@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 export default function WhoWeAre() {
   return (
@@ -9,7 +10,13 @@ export default function WhoWeAre() {
       <section className="relative max-w-7xl mx-auto px-6 py-16 md:py-20 flex flex-col lg:flex-row items-center gap-12">
         {/* IMAGEM */}
         <div className="flex-1 z-10 w-full">
-          <div className="w-full h-52 sm:h-72 md:h-80 lg:h-96 bg-gray-300 rounded-xl transition-transform hover:scale-105 duration-300" />
+          <Image
+            src="/images/image-6.jpg"
+            alt="Nossa equipe"
+            width={600}
+            height={400}
+            className="w-full h-52 sm:h-72 md:h-80 lg:h-96 rounded-xl object-cover transition-transform hover:scale-105 duration-300"
+          />
         </div>
 
         {/* TEXTO */}
