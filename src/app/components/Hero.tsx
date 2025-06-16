@@ -49,7 +49,13 @@ export default function Hero() {
                 height={20}
                 className="rounded-3xl w-full object-cover"
               />
-              <div className="w-1/2 h-20 bg-gray-200 rounded-lg" />
+              <Image
+                src="/images/image-2.jpg"
+                alt="Instalação em andamento"
+                width={80}
+                height={80}
+                className="w-1/2 h-20 rounded-lg object-cover"
+              />
             </div>
             <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center mt-4 hover:bg-orange-500 transition">
               <ArrowUpRight className="text-white w-4 h-4" />
@@ -62,8 +68,20 @@ export default function Hero() {
               Manutenção preventiva para garantir o melhor desempenho
             </p>
             <div className="flex mt-4 gap-2">
-              <div className="w-1/2 h-20 bg-gray-300 rounded-lg" />
-              <div className="w-1/2 h-20 bg-gray-200 rounded-lg" />
+              <Image
+                src="/images/image-3.png"
+                alt="Manutenção"
+                width={80}
+                height={80}
+                className="w-1/2 h-20 rounded-lg object-cover"
+              />
+              <Image
+                src="/images/image-4.jpeg"
+                alt="Equipamento"
+                width={80}
+                height={80}
+                className="w-1/2 h-20 rounded-lg object-cover"
+              />
             </div>
             <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center mt-4 hover:bg-orange-500 transition">
               <ArrowUpRight className="text-white w-4 h-4" />
@@ -74,15 +92,13 @@ export default function Hero() {
 
       {/* DIREITA */}
       <div className="flex-1 w-full">
-        {/* Substitua por uma imagem real se desejar */}
-        <div className="w-full h-64 sm:h-80 md:h-[400px] rounded-3xl bg-gray-300" />
-        {/* <Image
-          src="/capa-ar-condicionado.png"
-          alt="Imagem climatização"
+        <Image
+          src="/images/sala-ar2.jpg"
+          alt="Climatização em destaque"
           width={500}
           height={400}
-          className="rounded-3xl w-full object-cover"
-        /> */}
+          className="w-full h-64 sm:h-80 md:h-[400px] rounded-3xl object-cover"
+        />
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -27,7 +28,13 @@ export default function Testimonials() {
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* IMAGEM ILUSTRATIVA */}
         <div className="flex-1 w-full">
-          <div className="w-full h-64 sm:h-80 bg-gray-300 rounded-xl" />
+          <Image
+            src="/images/image-8.jpg"
+            alt="Clientes satisfeitos"
+            width={500}
+            height={320}
+            className="w-full h-64 sm:h-80 rounded-xl object-cover"
+          />
         </div>
 
         {/* CONTEÚDO */}
