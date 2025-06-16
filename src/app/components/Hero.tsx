@@ -43,11 +43,11 @@ export default function Hero() {
             </p>
             <div className="flex mt-4 gap-2">
               <Image
-                src="/images/sala-ar.jpg"
-                alt="Imagem climatização"
-                width={20}
-                height={20}
-                className="rounded-3xl w-full object-cover"
+                src="/images/image-1.png"
+                alt="Instalação em andamento"
+                width={80}
+                height={80}
+                className="w-1/2 h-20 rounded-lg object-cover"
               />
               <Image
                 src="/images/image-2.jpg"

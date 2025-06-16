@@ -18,7 +18,7 @@ export default function RecentProjects() {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <section id="portfolio" className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
       {/* TÍTULO */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12">
         <span className="text-orange-500">Projetos</span> Recentes
