@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-14 flex flex-col lg:flex-row items-center gap-12">
       {/* ESQUERDA */}
-      <div className="flex-1 w-full">
+      <div className="flex-1 w-full flex flex-col items-center text-center lg:items-start lg:text-left">
         {/* TÍTULO */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800">
           Climatizando Seus Ambientes com <br />
@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
 
         {/* CARDS */}
-        <div className="flex flex-wrap gap-4 mt-10">
+        <div className="flex flex-wrap gap-4 mt-10 justify-center lg:justify-start">
           {/* Card 1 */}
           <div className="bg-white rounded-xl shadow-md p-4 w-full sm:w-72 max-w-xs flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition duration-200">
             <p className="text-sm font-semibold text-gray-800">
